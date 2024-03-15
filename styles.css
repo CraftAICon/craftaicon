@@ -43,32 +43,12 @@ body {
 }
 
 .hero {
-  background-image: url("img/background.png");
+  background-image: url("img/background.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 0;
   text-align: center;
   color: white;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(23, 9, 39, 0.7);
-  z-index: 1;
-}
-
-/* Make sure the text is positioned above the overlay */
-.hero h2,
-.hero p,
-.hero .cta-button {
-  position: relative;
-  z-index: 2;
 }
 
 .hero h2 {
@@ -84,6 +64,9 @@ a.cta-button {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
 }
 
 .cta-button:hover,
@@ -141,16 +124,20 @@ a.cta-button:hover {
 
 .speaker-bio {
   font-size: 1rem;
-  margin-bottom: 15px; /* Increased margin for better separation */
+  margin-bottom: 15px;
+  /* Increased margin for better separation */
   color: #666;
-  border-bottom: 1px solid #eee; /* Adds a subtle line for visual separation */
-  padding-bottom: 10px; /* Adds padding above the border */
+  border-bottom: 1px solid #eee;
+  /* Adds a subtle line for visual separation */
+  padding-bottom: 10px;
+  /* Adds padding above the border */
 }
 
 .speaker-topic {
   font-size: 1rem;
   color: #333;
-  margin-top: 15px; /* Adds space above the topic */
+  margin-top: 15px;
+  /* Adds space above the topic */
 }
 
 .site-footer {
@@ -178,4 +165,33 @@ a.cta-button:hover {
   .speaker-photo {
     margin-bottom: 10px;
   }
+}
+
+.register {
+  background-image: url("img/background-rg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.register h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.register p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.register ul {
+  list-style: none;
+  padding: 0;
+}
+
+.register li {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
