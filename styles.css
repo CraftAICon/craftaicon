@@ -1,0 +1,235 @@
+:root {
+  --primary-color: #22a751;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.site-header img {
+  max-width: 200px;
+  height: auto;
+}
+
+.site-header .date-badge {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+.site-header h1,
+.hero h2,
+.about h2,
+.speakers h2,
+.register h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.speakers .tmp {
+  text-align: center;
+
+}
+
+#logo {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+  line-height: 3.2rem;
+}
+
+.hero h2 span {
+  font-size: 2.7rem;
+}
+
+.hero p {
+  letter-spacing: 2px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cta-button,
+a.cta-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.cta-button:hover,
+a.cta-button:hover {
+  background-color: #008410;
+  /* Darker green on hover */
+  transform: translateY(-3px);
+  /* Slight lift effect on hover */
+}
+
+.about,
+.speakers,
+.register {
+  padding: 3rem 0 0;
+}
+
+.about p,
+.register p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.speakers {
+  padding: 40px 0;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.speaker-info {
+  flex: 1;
+}
+
+.speaker-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.speaker-bio {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  /* Increased margin for better separation */
+  color: #666;
+  border-bottom: 1px solid #eee;
+  /* Adds a subtle line for visual separation */
+  padding-bottom: 10px;
+  /* Adds padding above the border */
+}
+
+.speaker-topic {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 15px;
+  /* Adds space above the topic */
+}
+
+.site-footer {
+  background-color: #10051a;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .speaker-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker-photo {
+    margin-bottom: 10px;
+  }
+}
+
+.register {
+  background-image: url("img/background-rg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.register h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+
+}
+
+.register p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.register ul {
+  list-style: none;
+  padding: 0;
+}
+
+.register .white-divider {
+  border: 0;
+  height: 1px;
+  /* Adjust the height to your preference */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* This sets the divider color to white */
+  margin: 2rem auto;
+  /* This adds some space above and below the divider */
+  max-width: 50px;
+}
+
+.register li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.08rem;
+}
