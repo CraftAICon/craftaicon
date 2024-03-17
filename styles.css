@@ -1,6 +1,5 @@
 :root {
-  --primary-color: #00dd73;
-  --secondary-color: #17002e;
+  --primary-color: #22a751;
 }
 
 body {
@@ -27,12 +26,25 @@ body {
   height: auto;
 }
 
+.site-header .date-badge {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
 .site-header h1,
 .hero h2,
 .about h2,
 .speakers h2,
 .register h2 {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.speakers .tmp {
+  text-align: center;
+
 }
 
 #logo {
@@ -53,7 +65,17 @@ body {
 
 .hero h2 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+
+.hero h2 span {
+  font-size: 2.7rem;
+}
+
+.hero p {
+  letter-spacing: 2px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .cta-button,
@@ -80,7 +102,7 @@ a.cta-button:hover {
 .about,
 .speakers,
 .register {
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 }
 
 .about p,
@@ -141,7 +163,7 @@ a.cta-button:hover {
 }
 
 .site-footer {
-  background-color: var(--secondary-color);
+  background-color: #10051a;
   color: #ffffff;
   padding: 2rem 0;
   text-align: center;
@@ -178,12 +200,16 @@ a.cta-button:hover {
 
 .register h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 0.7rem;
+
 }
 
 .register p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
 
 .register ul {
@@ -191,7 +217,19 @@ a.cta-button:hover {
   padding: 0;
 }
 
+.register .white-divider {
+  border: 0;
+  height: 1px;
+  /* Adjust the height to your preference */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* This sets the divider color to white */
+  margin: 2rem auto;
+  /* This adds some space above and below the divider */
+  max-width: 50px;
+}
+
 .register li {
   font-size: 1rem;
   margin-bottom: 10px;
+  letter-spacing: 0.08rem;
 }
