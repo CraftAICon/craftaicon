@@ -1,1 +1,0 @@
-scp.exe -r * server@192.168.1.127:/home/server/cac/html
