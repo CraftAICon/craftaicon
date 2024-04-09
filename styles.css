@@ -108,20 +108,35 @@ a.cta-button:hover {
 .register p {
   text-align: center;
   margin-bottom: 2rem;
+  padding: 0 24px;
 }
 
 .speakers {
   padding: 40px 0;
 }
 
-.speaker-card {
+.speakers .container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-card {
+  display: block; /* If you want .speaker-topic to be a block-level element */
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 40px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+.speaker-content {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
 }
 
 .speaker-photo {
@@ -134,12 +149,12 @@ a.cta-button:hover {
 }
 
 .speaker-info {
-  flex: 1;
+  flex: 1; /* Allows this container to fill the remaining space */
 }
 
 .speaker-info h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 4px;
   font-size: 1.5rem;
 }
 
@@ -148,17 +163,12 @@ a.cta-button:hover {
   margin-bottom: 15px;
   /* Increased margin for better separation */
   color: #666;
-  border-bottom: 1px solid #eee;
-  /* Adds a subtle line for visual separation */
-  padding-bottom: 10px;
-  /* Adds padding above the border */
+  margin-top: 0;
 }
 
 .speaker-topic {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 15px;
-  /* Adds space above the topic */
+  width: 100%; /* Ensures it occupies the full width of its container */
+  margin-top: 20px; /* Adds space between this and the flex container above */
 }
 
 .site-footer {
@@ -178,13 +188,27 @@ a.cta-button:hover {
     font-size: 2rem;
   }
 
-  .speaker-card {
+  .speaker-content {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center-align the items */
+    text-align: center; /* Center-align the text */
   }
 
   .speaker-photo {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Add some space between the photo and the name */
+  }
+
+  .speaker-info h3,
+  .speaker-info p {
+    margin: 0 0 10px; /* Reset margin and add space below */
+  }
+
+  .speaker-topic {
+    margin-top: 20px; /* Ensure there's space between the bio and the topic */
+  }
+
+  .speaker-card {
+    padding: 20px; /* Adjust padding as necessary */
   }
 }
 
