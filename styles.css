@@ -255,3 +255,33 @@ a.cta-button:hover {
   margin-bottom: 10px;
   letter-spacing: 0.08rem;
 }
+
+.partners-section h2 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partners a {
+  margin: 0 10px;
+  flex: 0 1 120px;
+}
+
+.partners img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partners a:hover img {
+  transform: scale(1.05);
+}
